@@ -363,6 +363,7 @@ button.btn-detail::before
 	padding-bottom: 200px;
 }
 .by.text-center {
+	width: 100%;
     padding: 20px;
     background: black;
     color: white;
