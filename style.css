@@ -19,7 +19,7 @@ body{
 .menu{
 	background: transparent;
 	width: 100%;
-	position: fixed;
+	position: fixed !important;;
 	z-index: 99999999999;
 
 }
@@ -28,9 +28,6 @@ body{
 	width: 100%;
 	list-style: none;
 	position: fixed !important;
-	/*position: absolute;
-	left: 50%;
-	transform: translateX(-50%);*/
 	text-align: center;
 	background: black;
 	color: white;
@@ -174,24 +171,7 @@ h1{
 .xanh{
 	color: #03ac03;
 }
-/* h1::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 15%;
-    height: 10px;
-    background: #03ac03;
-}
-h1::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 15%;
-    height: 10px;
-    background: black;
-}*/
+
 #endintro{
 	padding:20px 0px;
 	font-size: 20px;
@@ -336,7 +316,7 @@ button.btn-detail::before
 	opacity: 1;
 }
 .detail:hover{
-	 background: #383737c4;
+	background: #383737c4;
 }
 
 .detail button::before
@@ -382,10 +362,6 @@ button.btn-detail::before
 .contact{
 	padding-bottom: 200px;
 }
-/*.btn-block:hover{
-	background: white;
-}*/
-
 .by.text-center {
     padding: 20px;
     background: black;
