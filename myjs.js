@@ -14,8 +14,8 @@ jQuery(document).ready(function($) {
 
 	setTimeout(() => {
 	  	setInterval(() => {
-	  	var screenHeigt = $(document).height();
-	  	var screenWidth = $(document).width(); 
+	  	var screenHeigt = $("html,body").height();
+	  	var screenWidth = $("html,body").width(); 
 
 		  var startLeft = GetRanDom(0,screenWidth);
 		  var endLeft = GetRanDom(startLeft-100,startLeft+100);
