@@ -27,9 +27,10 @@ body{
 	padding: 18px 0;
 	width: 100%;
 	list-style: none;
-	position: absolute;
+	position: fixed;
+	/*position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
+	transform: translateX(-50%);*/
 	text-align: center;
 	background: black;
 	color: white;
@@ -256,13 +257,16 @@ button.btn-detail::before
 .skill i{
 	color:#03ac03; 
 }
-
+.skill li{
+	margin: 5px;
+}
 .project {
     height: 200px;
     background: white;
     padding: 10px;
     overflow: hidden;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .project img {
