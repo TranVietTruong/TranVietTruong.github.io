@@ -17,6 +17,7 @@ jQuery(document).ready(function($) {
 	  	var screenHeigt = $("html,body").height();
 	  	var screenWidth = $("html,body").width(); 
 
+
 		var startLeft = GetRanDom(0,screenWidth);
 		var endLeft = GetRanDom(startLeft-100,startLeft+100);
 
