@@ -6,11 +6,12 @@
 }
 html{
 	max-width: 100vw;
-	overflow: hidden;
+
 }
 body{
 	background: url(images/bg.jpg) repeat fixed transparent;
 	max-width: 100vw;
+	overflow: hidden;
 }
 
 .toggle{
