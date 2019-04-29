@@ -79,6 +79,7 @@ body{
 	.toggle{
 		display: block;
 		background: black;
+		max-width: 100vw;
 		color: #03ac03;
 	}
 	.menu ul{
