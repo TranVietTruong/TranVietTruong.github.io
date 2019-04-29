@@ -17,47 +17,46 @@ jQuery(document).ready(function($) {
 	  	var screenHeigt = $("html,body").height();
 	  	var screenWidth = $("html,body").width(); 
 
-		  var startLeft = GetRanDom(0,screenWidth);
-		  var endLeft = GetRanDom(startLeft-100,startLeft+100);
+		var startLeft = GetRanDom(0,screenWidth);
+		var endLeft = GetRanDom(startLeft-100,startLeft+100);
 
-		  var timeRun = GetRanDom(40000,60000);
+		var timeRun = GetRanDom(40000,60000);
 
-		  var opacity = Math.random() * (1 - 0.2) + 0.2;
+		var opacity = Math.random() * (1 - 0.2) + 0.2;
 
-		  var size = GetRanDom(5,20);
+		var size = GetRanDom(5,20);
 
-		  var snow = document.createElement('span');
+		var snow = document.createElement('i');
 
-		  $(snow).addClass('fas fa-heart').css({
-		  		'position':'absolute',
-		  		'z-index': 'auto',
-		  		'color': '#ef2b64',
-		  		'display' : 'block',
-		  		'top': 0,
-		  		'left':startLeft,
-		  		'opacity' : opacity,
-		  		'font-size' : size + 'px'
+		$(snow).addClass('fas fa-heart').css({
+	  		'position':'absolute',
+	  		'z-index': 'auto',
+	  		'color': '#ef2b64',
+	  		'display' : 'block',
+	  		'top': 0,
+	  		'left':startLeft,
+	  		'opacity' : opacity,
+	  		'font-size' : size + 'px'
+		})
+		.appendTo('body')
+		.animate(
+		{
+		  	'top': screenHeigt - size,
+		  	'left': endLeft
+		},
+		{
+			duration: timeRun,
+			easing: 'linear',
+			complete: function(){
+		  		$(this).fadeOut('slow',function(){
+		  			$(this).remove();
+		  		});
+			}
 
-		  })
-		  .appendTo('body')
-		  .animate(
-			  {
-			  	'top': screenHeigt - size,
-			  	'left': endLeft
-			  },
-			  {
-			  	duration: timeRun,
-			  	easing: 'linear',
-			  	complete: function(){
-			  		$(this).fadeOut('slow',function(){
-			  			$(this).remove();
-			  		});
-			  	}
-
-		   });
-
+		});
 	},500)
 	}, 25000);
+
 
 	$("#about").click(function(event) {
 		var vt = $("#ab").offset().top;
@@ -80,4 +79,6 @@ jQuery(document).ready(function($) {
 		$("html,body").animate({scrollTop:vt-100},500);
 	});
 	
+
+
 });
