@@ -29,7 +29,7 @@
 </head>
 <body>
 	<iframe src="mp3/Flower-Dance-DJ-Okawari.mp3" allow="autoplay" frameborder="0"  style="display: none;">
-		<audio autoplay loop>
+		<audio id="mp3" autoplay loop>
 		  	<source src="mp3/Flower-Dance-DJ-Okawari.mp3" type="audio/mp3">
 		</audio>
 	</iframe>
@@ -268,5 +268,8 @@
 	<script src="vendor/TweenMax.min.js"></script>
 	<script src="vendor/wow.min.js"></script>
 	<script src="myjs.js"></script>
+	<script>
+		document.getElementById("mp3").play();
+	</script>
 </body>
 </html>
